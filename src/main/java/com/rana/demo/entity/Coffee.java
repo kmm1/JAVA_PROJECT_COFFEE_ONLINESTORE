@@ -30,8 +30,13 @@ public class Coffee extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private name name;
 
+    @Column(name = "image")
+    private String image;
+
     @Column(name = "available")
     private Boolean available;
+
+
 
     @ManyToMany(mappedBy = "coffeesInOrder")
     private List<Order> orders = new ArrayList();

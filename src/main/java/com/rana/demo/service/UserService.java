@@ -25,11 +25,10 @@ public class UserService {
 
     public User findOne(Long id) {
         return userRepository.findById(id).get();
-
     }
 
     public List<User> findAll() {
-        ArrayList<User> list = new ArrayList<>();
+        List<User> list = new ArrayList<>();
         for (User user : userRepository.findAll()) {
             list.add(user);
         }
