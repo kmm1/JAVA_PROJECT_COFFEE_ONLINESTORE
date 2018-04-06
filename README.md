@@ -4,6 +4,7 @@ The culture of testing the code through JUnit, HamCrest is imposed. The H2databa
 Used L10N and I18N with support for Cuss and English.
 UI is developed includes Bootstrap.
 Autentificaution is creaded through Spring Security. Use login page to login.
-Run as an independent application (Spring Boot). Run coffee.sql file before using.
+Runs as an independent application through Spring Boot.
+Run coffee.sql SQL file before using.
 You can enter as an admin using login:admin, password:admin.
 
