@@ -1,3 +1,5 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,21 +11,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="${pageContext.request.contextPath}/home">Home Page</a>
+            <a class="navbar-brand" href="${pageContext.request.contextPath}/home"><spring:message code="Home.Page" text="default"/></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
 
                 <li>
-                    <a href="${pageContext.request.contextPath}/about">About</a>
+                    <a href="${pageContext.request.contextPath}/about"><spring:message code="About" text="default"/></a>
                 </li>
                 <li>
-                    <a href="${pageContext.request.contextPath}/contact">Contact</a>
+                    <a href="${pageContext.request.contextPath}/contact"><spring:message code="Contact" text="default"/></a>
                 </li>
                 <security:authorize access="hasAnyAuthority('ADMIN')">
                     <li id="manageProducts">
-                        <a href="${pageContext.request.contextPath}/manage/configuration">Manage Products</a>
+                        <a href="${pageContext.request.contextPath}/manage/configuration"><spring:message code="Manage.products" text="default"/></a>
                     </li>
                 </security:authorize>
             </ul>
@@ -32,10 +34,10 @@
             <ul class="nav navbar-nav navbar-right">
                 <security:authorize access="isAnonymous()">
                     <li id="register">
-                        <a href="${pageContext.request.contextPath}/register">Sign up</a>
+                        <a href="${pageContext.request.contextPath}/register"><spring:message code="Signup" text="default"/></a>
                     </li>
                     <li id="login">
-                        <a href="${pageContext.request.contextPath}/login">Login</a>
+                        <a href="${pageContext.request.contextPath}/login"><spring:message code="Login" text="default"/></a>
                     </li>
                 </security:authorize>
 
@@ -58,7 +60,7 @@
                                 <li class="divider" role="separator">
                                 </li>
                             </security:authorize>
-                            <li><a href="${pageContext.request.contextPath}/perform-logout">LogOut</a>
+                            <li><a href="${pageContext.request.contextPath}/perform-logout"><spring:message code="Logout" text="default"/></a>
                             </li>
                         </ul>
                     </li>

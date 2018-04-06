@@ -58,7 +58,7 @@
                                             <h3>
                                                 <a href="${pageContext.request.contextPath}/cart/add/product/${coffee.id}"
                                                    class="btn btn-success btn-product"><span
-                                                        class="glyphicon glyphicon-shopping-cart"></span> Buy</a></h3>
+                                                        class="glyphicon glyphicon-shopping-cart"></span> <spring:message code="Buy" text="default"/></a></h3>
                                         </div>
                                         <div class="col-md-6 col-xs-6 price">
                                             <h3><label>$${coffee.price}</label></h3>
