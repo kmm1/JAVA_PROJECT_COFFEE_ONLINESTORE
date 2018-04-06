@@ -1,4 +1,4 @@
-ONLINE COFFEE SHOP. A store where everyone can order a cup of coffe.
+ONLINE COFFEE SHOP. A store where everyone can order a cup of coffee.
 
 Technologies: Java 8, Spring Data/Core/Boot/MVC/Security, TomCat, Maven, MySql, H2, Bootstrap.
 The culture of testing the code  (JUnit, HamCrest).
