@@ -9,7 +9,10 @@ import java.util.List;
  */
 public interface CoffeeService {
 
-     Coffee findById(Long id);
+    Coffee findById(Long id);
 
-     List<Coffee> findAll();
+    List<Coffee> findAll();
+
+    List<Coffee> findAllAvailable();
+
 }

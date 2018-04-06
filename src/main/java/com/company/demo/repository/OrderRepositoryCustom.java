@@ -20,7 +20,7 @@ public interface OrderRepositoryCustom {
 
     void addProductsToUserCartByUserNameProductId(String userName, Long productId);
 
-     void updateOrder(String address, String receiverName, double shippingRate, double total, Long userId);
+    void updateOrder(String address, String receiverName, double shippingRate, double total, Long userId);
 
 
-    }
+}

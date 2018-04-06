@@ -23,7 +23,7 @@ public class HomeController {
     private OrderService orderService;
 
     @Autowired
-    public HomeController(UserService userService, CoffeeService coffeeService,OrderService orderService) {
+    public HomeController(UserService userService, CoffeeService coffeeService, OrderService orderService) {
         this.userService = userService;
         this.coffeeService = coffeeService;
         this.orderService = orderService;
@@ -31,7 +31,7 @@ public class HomeController {
 
     @ModelAttribute("coffeeList")
     public List<Coffee> getCoffee() {
-        return coffeeService.findAll();
+        return coffeeService.findAllAvailable();
     }
 
     @GetMapping({"/", "/index", "/home"})

@@ -37,4 +37,9 @@ public class CoffeeServiceImpl implements CoffeeService {
         }
         return list;
     }
+
+    @Override
+    public List<Coffee> findAllAvailable() {
+        return coffeeRepository.findAllAvailable();
+    }
 }
