@@ -3,6 +3,7 @@ The were used such technologies as: Java 8, Spring Data, Spring Core, Spring Boo
 The culture of testing the code through JUnit, HamCrest is imposed. The H2database is selected as the testing base.
 Used L10N and I18N with support for Cuss and English.
 UI is developed includes Bootstrap.
+Autentificaution is creaded through Spring Security. Use login page to login.
 Run as an independent application (Spring Boot). Run coffee.sql file before using.
 You can enter as an admin using login:admin, password:admin.
 
